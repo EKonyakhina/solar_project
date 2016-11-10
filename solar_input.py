@@ -63,6 +63,8 @@ def parse_star_parameters(line, star):
 
 
 def parse_planet_parameters(line, planet):
+    B=line.split()
+
     """Считывает данные о планете из строки.
     Предполагается такая строка:
     Входная строка должна иметь слеюущий формат:
