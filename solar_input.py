@@ -30,6 +30,13 @@ def read_space_objects_data_from_file(input_filename):
 
 
 def parse_star_parameters(line, star):
+    A=line.split()
+    star.color=A[2]
+    A[1]=int(A[1])
+    for i in range [3:]:
+        A[i]=int(A[i])
+
+
     """Считывает данные о звезде из строки.
     Входная строка должна иметь слеюущий формат:
     Star <радиус в пикселах> <цвет> <масса> <x> <y> <Vx> <Vy>
